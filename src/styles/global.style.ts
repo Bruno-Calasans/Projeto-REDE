@@ -4,8 +4,8 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 
     :root {
-       /* --primaryColor: black; */
-       /* --secondaryColor: red; */
+       --primaryColor: #f8b323;
+       --secondaryColor: #2A1A00;
        --defaultFontFamily: 'Open Sans', sans-serif;
     }
     
@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
     body {
         /* background-color: lightblue; */
         
+    }
+
+    a {
+        text-decoration: none;
     }
 
     #root {
