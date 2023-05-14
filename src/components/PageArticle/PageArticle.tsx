@@ -7,9 +7,12 @@ interface PageArticleProps {
   children: React.ReactNode
 }
 
-function PageArticle({ id, title, children }: PageArticleProps) {
+function PageArticle({ id, title, children, ...props }: PageArticleProps) {
   return (
-    <Container id={id}>
+    <Container
+      id={id}
+      {...props}
+    >
       <Title>
         <h1>{title}</h1>
       </Title>

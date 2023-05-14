@@ -1,4 +1,4 @@
-import { Container, QuoteArea, AuthorArea } from './Quote.style'
+import { Container, Content, QuoteArea, AuthorArea } from './Quote.style'
 
 interface QuoteProps {
   children: string
@@ -8,8 +8,10 @@ interface QuoteProps {
 function Quote({ children, author }: QuoteProps) {
   return (
     <Container>
-      <QuoteArea>{children}</QuoteArea>
-      <AuthorArea>~{author}</AuthorArea>
+      <Content>
+        <QuoteArea>{children}</QuoteArea>
+        <AuthorArea>~{author}</AuthorArea>
+      </Content>
     </Container>
   )
 }

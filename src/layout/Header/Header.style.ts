@@ -49,6 +49,7 @@ export const LowerHeader = styled.div`
 export const Title = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 
   font-weight: bold;
@@ -57,7 +58,22 @@ export const Title = styled.div`
   color: white;
   text-shadow: 3px 3px black;
 
-  background-image: linear-gradient(to right, var(--primaryColor), #f8b52300);
+  h1 {
+    background-image: linear-gradient(to right, var(--primaryColor), #f8b52300);
+  }
+
+  /* & ul {
+    list-style: none;
+
+    & li {
+      color: white;
+      text-shadow: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  } */
 
   & span {
     color: red;

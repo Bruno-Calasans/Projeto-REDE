@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle`
         
     }
 
+    .animation {
+        background-color: red;
+        /* font-size: 3em; */
+        /* border: 1px solid black; */
+    }
+
     a {
         text-decoration: none;
     }
