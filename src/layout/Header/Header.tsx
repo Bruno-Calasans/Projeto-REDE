@@ -34,37 +34,22 @@ function Header() {
       </UpperHeader>
       <LowerHeader>
         <Title>
-          <h1>Projeto R.E.D.E</h1>
+          <h1>
+            Projeto <span>R.E.D.E</span>
+          </h1>
         </Title>
         <AbvArea>
-          <p
-            style={{
-              backgroundImage: 'linear-gradient(to right, #f54040, #ff000000)',
-            }}
-          >
-            <span style={{ color: 'red' }}>R</span>
-            ede de
+          <p>
+            <span>R</span>ede de
           </p>
-          <p
-            style={{
-              backgroundImage: 'linear-gradient(to right, #f54040, #ff000000',
-            }}
-          >
-            <span style={{ color: 'red' }}>E</span>ducação sobre
+          <p>
+            <span>E</span>ducação sobre
           </p>
-          <p
-            style={{
-              backgroundImage: 'linear-gradient(to right, #f54040, #ff000000)',
-            }}
-          >
-            <span style={{ color: 'red' }}>D</span>iversidadde
+          <p>
+            <span>D</span>iversidadde
           </p>
-          <p
-            style={{
-              backgroundImage: 'linear-gradient(to right, #f54040, #ff000000)',
-            }}
-          >
-            <span style={{ color: 'red' }}>É</span>tnica
+          <p>
+            <span>É</span>tnica
           </p>
         </AbvArea>
       </LowerHeader>

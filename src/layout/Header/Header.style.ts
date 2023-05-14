@@ -58,6 +58,10 @@ export const Title = styled.div`
   text-shadow: 3px 3px black;
 
   background-image: linear-gradient(to right, var(--primaryColor), #f8b52300);
+
+  & span {
+    color: red;
+  }
 `
 
 export const AbvArea = styled.div`
@@ -70,4 +74,12 @@ export const AbvArea = styled.div`
   font-size: 2.5rem;
   line-height: 1.5em;
   gap: 2px;
+
+  & p {
+    background-image: linear-gradient(to right, #f54040, #ff000000);
+  }
+
+  & p span {
+    color: red;
+  }
 `
