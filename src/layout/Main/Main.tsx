@@ -1,12 +1,14 @@
 import { Container } from './Main.style'
 import Hightlight from '../../components/Hightlight/Hightlight'
 import PageArticle from '../../components/PageArticle/PageArticle'
+import ListBullet from '../../components/BulletList/ListBullet'
+import Quote from '../../components/Quote/Quote'
 
 function Main() {
   return (
     <Container>
       <PageArticle
-        id="artigo1"
+        id="article1"
         title="Qual o nosso objetivo?"
       >
         <p>
@@ -26,19 +28,32 @@ function Main() {
         id="article2"
         title="Como pretendemos atingí-lo?"
       >
-        {' '}
         <p>
-          O projeto será dividido em dois momentos: o primeiro; direcionado aos alunos do ensino fundamental, através do
-          desenvolvimento de oficinas como: atividades lúdicas, sensoriais (instrumentos, músicas) e experiências
-          culinárias, abordando em cada tema proposto um pouco da história desses indivíduos, fomentando o respeito da
-          comunidade jovem frente a esses povos.
+          O projeto será dividido em <Hightlight color="black">dois momentos</Hightlight>:
         </p>
-        <p>
-          O segundo momento, com os jovens do ensino médio, que, acompanhando e registrando as atividades das oficinas
-          através de fotos, entrevistas com os alunos e voluntários, irão desenvolver um site com o auxílio de nossos
-          colaboradores utilizando a linguagem de marcação <abbr title="Hyper Text Marking Language">HTML</abbr> e{' '}
-          <abbr title="Cascading Styling Sheet">CSS</abbr>.
-        </p>
+        <ol>
+          <ListBullet bulletText="1">
+            Direcionado aos alunos do ensino fundamental, através do desenvolvimento de oficinas como: atividades
+            <Hightlight color="black"> lúdicas</Hightlight>,
+            <Hightlight color="black"> sensoriais (instrumentos, músicas)</Hightlight> e{' '}
+            <Hightlight color="black">experiências culinárias</Hightlight>, abordando em cada tema proposto um pouco da
+            história desses indivíduos, fomentando o respeito da comunidade jovem frente a esses povos.
+          </ListBullet>
+
+          <ListBullet bulletText="2">
+            O segundo momento, com os jovens do ensino médio, que, acompanhando e registrando as atividades das oficinas
+            através de fotos, entrevistas com os alunos e voluntários, irão desenvolver um site com o auxílio de nossos
+            colaboradores utilizando a linguagem de marcação{' '}
+            <Hightlight color="black">
+              <abbr title="Hyper Text Marking Language">HTML</abbr>
+            </Hightlight>{' '}
+            e{' '}
+            <Hightlight color="black">
+              <abbr title="Cascading Styling Sheet">CSS</abbr>
+            </Hightlight>
+            .
+          </ListBullet>
+        </ol>
       </PageArticle>
 
       <PageArticle
@@ -50,6 +65,11 @@ function Main() {
           conhecimento ético e cultural, utilizando assim, a vivência social e a tecnologia.
         </p>
       </PageArticle>
+
+      <Quote author="Audre Lorde">
+        Não são as nossas diferenças que nos dividem. É a nossa incapacidade de reconhecer , aceitar e celebrar essas
+        diferenças.
+      </Quote>
     </Container>
   )
 }

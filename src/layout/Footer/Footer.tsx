@@ -38,7 +38,7 @@ function Footer() {
       </UpperFooter>
       <LowerFooter>
         <RightsArea>
-          <p> &copy; Todos os direitos reservados</p>
+          <p> REDE &copy; Todos os direitos reservados</p>
         </RightsArea>
       </LowerFooter>
     </Container>

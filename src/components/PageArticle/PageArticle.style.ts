@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
-// eslint-disable-next-line import/prefer-default-export
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 500px;
+  height: fit-content;
 
   background-color: beige;
   box-shadow: 1px 1px 15px black;

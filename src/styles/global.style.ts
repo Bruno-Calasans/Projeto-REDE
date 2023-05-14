@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
     :root {
        --primaryColor: #f8b323;
-       --secondaryColor: #2A1A00;
+       --secondaryColor: #7A3D00;
        --defaultFontFamily: 'Open Sans', sans-serif;
     }
     

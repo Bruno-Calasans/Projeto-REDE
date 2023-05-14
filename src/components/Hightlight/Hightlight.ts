@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 
-const Hightlight = styled.span`
-  color: var(--primaryColor);
+interface HightlightProps {
+  color?: string
+  bold?: boolean
+}
+
+const Hightlight = styled.span<HightlightProps>`
+  color: ${(props) => props.color ?? 'var(--secondaryColor)'};
   font-weight: bolder;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 `
 export default Hightlight

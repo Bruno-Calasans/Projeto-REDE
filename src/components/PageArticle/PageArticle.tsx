@@ -3,7 +3,7 @@ import { Container, Title, Content } from './PageArticle.style'
 
 interface PageArticleProps {
   id?: string
-  title: string
+  title?: string
   children: React.ReactNode
 }
 
