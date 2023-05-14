@@ -35,7 +35,7 @@ function Header() {
       <LowerHeader>
         <Title>
           <h1>
-            Projeto <span>R.E.D.E</span>
+            ONG <span>R.E.D.E</span>
           </h1>
         </Title>
         <AbvArea>
