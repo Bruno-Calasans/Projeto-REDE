@@ -62,19 +62,6 @@ export const Title = styled.div`
     background-image: linear-gradient(to right, var(--primaryColor), #f8b52300);
   }
 
-  /* & ul {
-    list-style: none;
-
-    & li {
-      color: white;
-      text-shadow: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  } */
-
   & span {
     color: red;
   }

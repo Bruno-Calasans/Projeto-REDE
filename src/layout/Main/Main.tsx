@@ -5,12 +5,13 @@ import PageArticle from '../../components/PageArticle/PageArticle'
 import ListBullet from '../../components/BulletList/ListBullet'
 import Quote from '../../components/Quote/Quote'
 import Reveal from '../../components/Animations/Reveal/Reveal'
+import Expand from '../../components/Animations/Expand/Expand'
 import TeamMember from '../../components/TeamMember/TeamMember'
 
 function Main() {
   return (
     <Container>
-      <Reveal>
+      <Expand config={{ fromLeft: false }}>
         <PageArticle
           id="article1"
           title="Qual o nosso objetivo?"
@@ -27,8 +28,7 @@ function Main() {
             origem, heranças culturais e desenvolver um maior esclarecimento de sua história.
           </p>
         </PageArticle>
-      </Reveal>
-
+      </Expand>
       <Reveal>
         <PageArticle
           id="article2"
@@ -62,8 +62,7 @@ function Main() {
           </ol>
         </PageArticle>
       </Reveal>
-
-      <Reveal>
+      <Expand config={{ fromLeft: false }}>
         <PageArticle
           id="article3"
           title="Concluindo..."
@@ -73,8 +72,7 @@ function Main() {
             de conhecimento ético e cultural, utilizando assim, a vivência social e a tecnologia.
           </p>
         </PageArticle>
-      </Reveal>
-
+      </Expand>
       <Reveal>
         <PageArticle
           title="Conheça nossa equipe"
@@ -83,24 +81,26 @@ function Main() {
           <TeamArea>
             <TeamMember
               url="./imgs/avatar.png"
-              desc="Fundadora"
+              name="Andrea Dias"
+              desc="Fundador"
             />
             <TeamMember
               url="./imgs/avatar.png"
-              desc="Participante"
+              name="Lucas Cleiton"
+              desc="Fundador"
             />
             <TeamMember
               url="./imgs/avatar.png"
-              desc="Participante"
+              name="Joaquim"
+              desc="Fundador"
             />
             <TeamMember
               url="./imgs/avatar.png"
-              desc="Participante"
+              desc="Bruno Calasans"
             />
           </TeamArea>
         </PageArticle>
       </Reveal>
-
       <Reveal>
         <PageArticle
           title="Quem somos nós?"
@@ -119,7 +119,6 @@ function Main() {
           </AboutArea>
         </PageArticle>
       </Reveal>
-
       <Reveal>
         <Quote author="Audre Lorde">
           Não são as nossas diferenças que nos dividem. É a nossa incapacidade de reconhecer , aceitar e celebrar essas
