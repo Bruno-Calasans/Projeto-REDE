@@ -19,12 +19,12 @@ function Header() {
             text="Home"
           />
           <LinkButton
-            url="#about"
-            text="Sobre"
-          />
-          <LinkButton
             url="#team"
             text="Equipe"
+          />
+          <LinkButton
+            url="#about"
+            text="Sobre"
           />
           <LinkButton
             url="#contacts"

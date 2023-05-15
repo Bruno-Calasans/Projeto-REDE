@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Container, TeamArea } from './Main.style'
+import { Container, TeamArea, AboutArea } from './Main.style'
 import Hightlight from '../../components/Hightlight/Hightlight'
 import PageArticle from '../../components/PageArticle/PageArticle'
 import ListBullet from '../../components/BulletList/ListBullet'
@@ -17,9 +17,9 @@ function Main() {
         >
           <p>
             Visando identificar agentes transformadores e formadores da cultura brasileira, a partir de um conhecimento
-            de nossas origens e diversidades culturais encontradas no Brasil, a ONG REDE vem com o objetivo de
-            apresentar aos jovens do ensino fundamental e médio sobre a cultura indígena e africana, focando no respeito
-            à diversidade presente no país.
+            de nossas origens e diversidades culturais encontradas no Brasil, a{' '}
+            <Hightlight color="black">ONG REDE</Hightlight> vem com o objetivo de apresentar aos jovens do ensino
+            fundamental e médio sobre a cultura indígena e africana, focando no respeito à diversidade presente no país.
           </p>
           <p>
             Com o projeto <Hightlight>“Conhecendo para Respeitar”</Hightlight>, torna-se possível uma maior
@@ -76,13 +76,6 @@ function Main() {
       </Reveal>
 
       <Reveal>
-        <Quote author="Audre Lorde">
-          Não são as nossas diferenças que nos dividem. É a nossa incapacidade de reconhecer , aceitar e celebrar essas
-          diferenças.
-        </Quote>
-      </Reveal>
-
-      <Reveal>
         <PageArticle
           title="Conheça nossa equipe"
           id="team"
@@ -106,6 +99,32 @@ function Main() {
             />
           </TeamArea>
         </PageArticle>
+      </Reveal>
+
+      <Reveal>
+        <PageArticle
+          title="Quem somos nós?"
+          id="about"
+        >
+          <AboutArea>
+            <p>
+              <Hightlight color="black">R.E.D.E (Rede de Educação sobre Diversidade Étnica)</Hightlight> Criada desde
+              2020, atuamos em comunidades da região metropolitana do Recife, levando conhecimento da cultura afro e
+              indígena aos jovens recifenses.
+            </p>
+            <img
+              src="./imgs/rede-logo-transparent.png"
+              alt=""
+            />
+          </AboutArea>
+        </PageArticle>
+      </Reveal>
+
+      <Reveal>
+        <Quote author="Audre Lorde">
+          Não são as nossas diferenças que nos dividem. É a nossa incapacidade de reconhecer , aceitar e celebrar essas
+          diferenças.
+        </Quote>
       </Reveal>
     </Container>
   )

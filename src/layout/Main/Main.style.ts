@@ -9,7 +9,8 @@ export const Container = styled.main`
   justify-content: space-evenly;
   height: 300vh;
 
-  #article1 article {
+  #article1 article,
+  #article3 article {
     border-left: 2px solid black;
   }
 
@@ -22,10 +23,6 @@ export const Container = styled.main`
     }
   }
 
-  #article3 article {
-    border-left: 2px solid black;
-  }
-
   #team {
     background-color: #7a3d00;
     color: white;
@@ -34,6 +31,10 @@ export const Container = styled.main`
     h1 {
       background-image: none;
     }
+  }
+
+  #about article {
+    border-left: 2px solid black;
   }
 
   & section {
@@ -60,10 +61,20 @@ export const Container = styled.main`
   background-size: cover; */
 `
 
+export const AboutArea = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  & img {
+    max-width: 300px;
+  }
+`
+
 export const TeamArea = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  /* gap: 10px; */
 `
